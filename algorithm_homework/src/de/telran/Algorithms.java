@@ -5,7 +5,7 @@ package de.telran;
 public class Algorithms {
     static int findGcd(int firstNumber, int secondNumber) {
         int result = 0;
-        for (int i = 1; i <= Math.max(firstNumber, secondNumber); i++) {
+        for (int i = 1; i <= Math.min(firstNumber, secondNumber); i++) {
             if (firstNumber % i == 0 && secondNumber % i == 0)
                 result = i;
         }
